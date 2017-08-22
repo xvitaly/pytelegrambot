@@ -1,7 +1,7 @@
 %global appname pytelegrambot
 %global richname pyTelegramBotAPI
 
-%global appsum Python Telegram bot api
+%global appsum Python Telegram bot API
 %global appdesc A simple, but extensible Python implementation for the Telegram Bot API
 
 Name: python-%{appname}
@@ -26,7 +26,6 @@ Summary: %{sum}
 
 %description -n python2-%{appname}
 %{appdesc}.
-
 
 %package -n python3-%{appname}
 Summary: %{sum}
