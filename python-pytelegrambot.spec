@@ -1,4 +1,4 @@
-%global appname pytelegrambot
+%global appname pytelegrambotapi
 %global richname pyTelegramBotAPI
 
 %global appsum Python Telegram bot API
