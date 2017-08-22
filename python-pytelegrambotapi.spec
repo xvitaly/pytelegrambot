@@ -7,7 +7,7 @@
 Name: python-%{appname}
 Version: 3.2.0
 Release: 1%{?dist}
-Summary: %{sum}
+Summary: %{appsum}
 
 License: GPLv2+
 URL: https://github.com/eternnoir/%{richname}
@@ -21,14 +21,14 @@ BuildRequires: python3-devel
 %{appdesc}.
 
 %package -n python2-%{appname}
-Summary: %{sum}
+Summary: %{appsum}
 %{?python_provide:%python_provide python2-%{appname}}
 
 %description -n python2-%{appname}
 %{appdesc}.
 
 %package -n python3-%{appname}
-Summary: %{sum}
+Summary: %{appsum}
 %{?python_provide:%python_provide python3-%{appname}}
 
 %description -n python3-%{appname}
