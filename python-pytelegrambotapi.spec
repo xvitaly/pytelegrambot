@@ -12,10 +12,12 @@ Summary: %{appsum}
 License: GPLv2+
 URL: https://github.com/eternnoir/%{richname}
 Source0: %{url}/archive/%{version}.tar.gz#/%{appname}-%{version}.tar.gz
-
 BuildArch: noarch
+
 BuildRequires: python2-devel
 BuildRequires: python3-devel
+BuildRequires: python2dist(requests)
+BuildRequires: python3dist(requests)
 
 %description
 %{appdesc}.
