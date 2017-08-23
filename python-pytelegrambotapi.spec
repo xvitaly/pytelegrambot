@@ -16,8 +16,13 @@ BuildArch: noarch
 
 BuildRequires: python2-devel
 BuildRequires: python3-devel
+
 BuildRequires: python2dist(requests)
 BuildRequires: python3dist(requests)
+BuildRequires: python2dist(wheel)
+BuildRequires: python3dist(wheel)
+BuildRequires: python2dist(six)
+BuildRequires: python3dist(six)
 
 %description
 %{appdesc}.
