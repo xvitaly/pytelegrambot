@@ -6,7 +6,7 @@
 
 Name: python-%{appname}
 Version: 3.2.0
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: %{appsum}
 
 License: GPLv2+
@@ -62,5 +62,8 @@ Summary: %{appsum}
 %{python3_sitelib}/*
 
 %changelog
+* Wed Aug 23 2017 Vitaly Zaitsev <vitaly@easycoding.org> - 3.2.0-2
+- Small SPEC fixes.
+
 * Tue Aug 22 2017 Vitaly Zaitsev <vitaly@easycoding.org> - 3.2.0-1
 - Initial SPEC release.
