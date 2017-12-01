@@ -29,6 +29,8 @@ BuildRequires: python3dist(six)
 
 %package -n python2-%{appname}
 Summary: %{appsum}
+Requires: python2dist(requests)
+Requires: python2dist(six)
 %{?python_provide:%python_provide python2-%{appname}}
 
 %description -n python2-%{appname}
@@ -36,6 +38,8 @@ Summary: %{appsum}
 
 %package -n python3-%{appname}
 Summary: %{appsum}
+Requires: python3dist(requests)
+Requires: python3dist(six)
 %{?python_provide:%python_provide python3-%{appname}}
 
 %description -n python3-%{appname}
