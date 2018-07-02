@@ -6,7 +6,7 @@
 
 Name: python-%{appname}
 Version: 3.6.3
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: %{appsum}
 
 License: GPLv2+
@@ -71,6 +71,9 @@ Requires: python3dist(six)
 %{python3_sitelib}/*
 
 %changelog
+* Tue Jun 19 2018 Miro Hrončok <mhroncok@redhat.com> - 3.6.3-2
+- Rebuilt for Python 3.7
+
 * Tue May 15 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 3.6.3-1
 - Updated to version 3.6.3.
 
