@@ -14,6 +14,9 @@ URL: https://github.com/eternnoir/%{richname}
 Source0: %{url}/archive/%{version}.tar.gz#/%{appname}-%{version}.tar.gz
 BuildArch: noarch
 
+# https://github.com/eternnoir/pyTelegramBotAPI/pull/526
+Patch100: rhbz-1594941-fix.patch
+
 BuildRequires: python2-devel
 BuildRequires: python3-devel
 
@@ -46,7 +49,7 @@ Requires: python3dist(six)
 %{appdesc}.
 
 %prep
-%autosetup -n %{richname}-%{version}
+%autosetup -n %{richname}-%{version} -p1
 
 %build
 %py2_build
