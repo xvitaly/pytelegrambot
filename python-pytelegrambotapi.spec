@@ -6,7 +6,7 @@
 
 Name: python-%{appname}
 Version: 3.6.3
-Release: 3%{?dist}
+Release: 4%{?dist}
 Summary: %{appsum}
 
 License: GPLv2+
@@ -74,6 +74,9 @@ Requires: python3dist(six)
 %{python3_sitelib}/*
 
 %changelog
+* Sat Jul 14 2018 Fedora Release Engineering <releng@fedoraproject.org> - 3.6.3-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
+
 * Mon Jul 02 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 3.6.3-3
 - Fixed build under Python 3.7.
 
