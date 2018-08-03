@@ -5,17 +5,14 @@
 %global appdesc A simple, but extensible Python implementation for the Telegram Bot API
 
 Name: python-%{appname}
-Version: 3.6.3
-Release: 4%{?dist}
+Version: 3.6.4
+Release: 1%{?dist}
 Summary: %{appsum}
 
 License: GPLv2+
 URL: https://github.com/eternnoir/%{richname}
 Source0: %{url}/archive/%{version}.tar.gz#/%{appname}-%{version}.tar.gz
 BuildArch: noarch
-
-# https://github.com/eternnoir/pyTelegramBotAPI/pull/526
-Patch100: rhbz-1594941-fix.patch
 
 BuildRequires: python2-devel
 BuildRequires: python3-devel
@@ -74,6 +71,9 @@ Requires: python3dist(six)
 %{python3_sitelib}/*
 
 %changelog
+* Fri Aug 03 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 3.6.4-1
+- Updated to version 3.6.4.
+
 * Sat Jul 14 2018 Fedora Release Engineering <releng@fedoraproject.org> - 3.6.3-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
 
