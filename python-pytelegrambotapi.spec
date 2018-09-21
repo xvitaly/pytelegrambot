@@ -62,13 +62,13 @@ Requires: python3dist(six)
 
 %files -n python2-%{appname}
 %license LICENSE
-%doc README.rst README.md
+%doc README.md
 %{python2_sitelib}/telebot
 %{python2_sitelib}/%{richname}-*.egg-info
 
 %files -n python3-%{appname}
 %license LICENSE
-%doc README.rst README.md
+%doc README.md
 %{python3_sitelib}/telebot
 %{python3_sitelib}/%{richname}-*.egg-info
 
