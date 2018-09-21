@@ -63,12 +63,14 @@ Requires: python3dist(six)
 %files -n python2-%{appname}
 %license LICENSE
 %doc README.rst README.md
-%{python2_sitelib}/*
+%{python2_sitelib}/telebot
+%{python2_sitelib}/%{richname}-*.egg-info
 
 %files -n python3-%{appname}
 %license LICENSE
 %doc README.rst README.md
-%{python3_sitelib}/*
+%{python3_sitelib}/telebot
+%{python3_sitelib}/%{richname}-*.egg-info
 
 %changelog
 * Fri Sep 21 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 3.6.6-1
