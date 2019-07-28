@@ -6,7 +6,7 @@
 
 Name: python-%{appname}
 Version: 3.6.6
-Release: 1%{?dist}
+Release: 3%{?dist}
 Summary: %{appsum}
 
 License: GPLv2+
@@ -14,26 +14,12 @@ URL: https://github.com/eternnoir/%{richname}
 Source0: %{url}/archive/%{version}.tar.gz#/%{appname}-%{version}.tar.gz
 BuildArch: noarch
 
-BuildRequires: python2-devel
 BuildRequires: python3-devel
-
-BuildRequires: python2dist(requests)
 BuildRequires: python3dist(requests)
-BuildRequires: python2dist(wheel)
 BuildRequires: python3dist(wheel)
-BuildRequires: python2dist(six)
 BuildRequires: python3dist(six)
 
 %description
-%{appdesc}.
-
-%package -n python2-%{appname}
-Summary: %{appsum}
-Requires: python2dist(requests)
-Requires: python2dist(six)
-%{?python_provide:%python_provide python2-%{appname}}
-
-%description -n python2-%{appname}
 %{appdesc}.
 
 %package -n python3-%{appname}
@@ -49,22 +35,13 @@ Requires: python3dist(six)
 %autosetup -n %{richname}-%{version} -p1
 
 %build
-%py2_build
 %py3_build
 
 %install
-%py2_install
 %py3_install
 
 %check
-%{__python2} setup.py test
 %{__python3} setup.py test
-
-%files -n python2-%{appname}
-%license LICENSE
-%doc README.md
-%{python2_sitelib}/telebot
-%{python2_sitelib}/%{richname}-*.egg-info
 
 %files -n python3-%{appname}
 %license LICENSE
@@ -73,6 +50,12 @@ Requires: python3dist(six)
 %{python3_sitelib}/%{richname}-*.egg-info
 
 %changelog
+* Fri Jul 26 2019 Fedora Release Engineering <releng@fedoraproject.org> - 3.6.6-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
+
+* Sat Feb 02 2019 Fedora Release Engineering <releng@fedoraproject.org> - 3.6.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
+
 * Fri Sep 21 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 3.6.6-1
 - Updated to version 3.6.6.
 
