@@ -51,6 +51,9 @@ Summary: %{appsum}
 * Mon Jan 27 2020 Vitaly Zaitsev <vitaly@easycoding.org> - 3.6.7-1
 - Updated to version 3.6.7.
 
+* Thu Oct 03 2019 Miro Hrončok <mhroncok@redhat.com> - 3.6.6-5
+- Rebuilt for Python 3.8.0rc1 (#1748018)
+
 * Mon Aug 19 2019 Miro Hrončok <mhroncok@redhat.com> - 3.6.6-4
 - Rebuilt for Python 3.8
 
