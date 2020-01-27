@@ -5,13 +5,13 @@
 %global appdesc A simple, but extensible Python implementation for the Telegram Bot API
 
 Name: python-%{appname}
-Version: 3.6.6
-Release: 4%{?dist}
+Version: 3.6.7
+Release: 1%{?dist}
 Summary: %{appsum}
 
 License: GPLv2+
 URL: https://github.com/eternnoir/%{richname}
-Source0: %{url}/archive/%{version}.tar.gz#/%{appname}-%{version}.tar.gz
+Source0: %{url}/archive/%{version}/%{appname}-%{version}.tar.gz
 BuildArch: noarch
 
 BuildRequires: python3-devel
@@ -24,8 +24,6 @@ BuildRequires: python3dist(six)
 
 %package -n python3-%{appname}
 Summary: %{appsum}
-Requires: python3dist(requests)
-Requires: python3dist(six)
 %{?python_provide:%python_provide python3-%{appname}}
 
 %description -n python3-%{appname}
@@ -46,10 +44,13 @@ Requires: python3dist(six)
 %files -n python3-%{appname}
 %license LICENSE
 %doc README.md
-%{python3_sitelib}/telebot
-%{python3_sitelib}/%{richname}-*.egg-info
+%{python3_sitelib}/telebot/
+%{python3_sitelib}/%{richname}-*.egg-info/
 
 %changelog
+* Mon Jan 27 2020 Vitaly Zaitsev <vitaly@easycoding.org> - 3.6.7-1
+- Updated to version 3.6.7.
+
 * Mon Aug 19 2019 Miro Hrončok <mhroncok@redhat.com> - 3.6.6-4
 - Rebuilt for Python 3.8
 
