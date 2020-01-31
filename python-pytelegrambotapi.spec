@@ -6,7 +6,7 @@
 
 Name: python-%{appname}
 Version: 3.6.7
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: %{appsum}
 
 License: GPLv2+
@@ -48,6 +48,9 @@ Summary: %{appsum}
 %{python3_sitelib}/%{richname}-*.egg-info/
 
 %changelog
+* Thu Jan 30 2020 Fedora Release Engineering <releng@fedoraproject.org> - 3.6.7-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
+
 * Mon Jan 27 2020 Vitaly Zaitsev <vitaly@easycoding.org> - 3.6.7-1
 - Updated to version 3.6.7.
 
