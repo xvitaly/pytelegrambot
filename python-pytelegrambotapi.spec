@@ -6,7 +6,7 @@
 
 Name: python-%{appname}
 Version: 3.6.7
-Release: 3%{?dist}
+Release: 4%{?dist}
 Summary: %{appsum}
 
 License: GPLv2+
@@ -15,6 +15,7 @@ Source0: %{url}/archive/%{version}/%{appname}-%{version}.tar.gz
 BuildArch: noarch
 
 BuildRequires: python3-devel
+BuildRequires: python3-setuptools
 BuildRequires: python3dist(requests)
 BuildRequires: python3dist(wheel)
 BuildRequires: python3dist(six)
@@ -48,6 +49,9 @@ Summary: %{appsum}
 %{python3_sitelib}/%{richname}-*.egg-info/
 
 %changelog
+* Wed Jun 24 2020 Vitaly Zaitsev <vitaly@easycoding.org> - 3.6.7-4
+- Added python3-setuptools to build requirements.
+
 * Tue May 26 2020 Miro Hrončok <mhroncok@redhat.com> - 3.6.7-3
 - Rebuilt for Python 3.9
 
