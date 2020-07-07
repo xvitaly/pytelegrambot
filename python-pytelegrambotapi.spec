@@ -5,8 +5,8 @@
 %global appdesc A simple, but extensible Python implementation for the Telegram Bot API
 
 Name: python-%{appname}
-Version: 3.6.7
-Release: 4%{?dist}
+Version: 3.7.2
+Release: 1%{?dist}
 Summary: %{appsum}
 
 License: GPLv2+
@@ -49,6 +49,9 @@ Summary: %{appsum}
 %{python3_sitelib}/%{richname}-*.egg-info/
 
 %changelog
+* Tue Jul 07 2020 Vitaly Zaitsev <vitaly@easycoding.org> - 3.7.2-1
+- Updated to version 3.7.2.
+
 * Wed Jun 24 2020 Vitaly Zaitsev <vitaly@easycoding.org> - 3.6.7-4
 - Added python3-setuptools to build requirements.
 
