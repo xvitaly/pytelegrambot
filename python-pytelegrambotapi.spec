@@ -5,8 +5,8 @@
 %global appdesc A simple, but extensible Python implementation for the Telegram Bot API
 
 Name: python-%{appname}
-Version: 3.7.6
-Release: 2%{?dist}
+Version: 3.7.7
+Release: 1%{?dist}
 Summary: %{appsum}
 
 License: GPLv2+
@@ -49,6 +49,9 @@ Summary: %{appsum}
 %{python3_sitelib}/%{richname}-*.egg-info/
 
 %changelog
+* Fri Apr 02 2021 Vitaly Zaitsev <vitaly@easycoding.org> - 3.7.7-1
+- Updated to version 3.7.7.
+
 * Wed Jan 27 2021 Fedora Release Engineering <releng@fedoraproject.org> - 3.7.6-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild
 
