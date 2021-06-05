@@ -6,7 +6,7 @@
 
 Name: python-%{appname}
 Version: 3.7.9
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: %{appsum}
 
 License: GPLv2+
@@ -49,6 +49,9 @@ Summary: %{appsum}
 %{python3_sitelib}/%{richname}-*.egg-info/
 
 %changelog
+* Fri Jun 04 2021 Python Maint <python-maint@redhat.com> - 3.7.9-2
+- Rebuilt for Python 3.10
+
 * Sun May 16 2021 Vitaly Zaitsev <vitaly@easycoding.org> - 3.7.9-1
 - Updated to version 3.7.9.
 
