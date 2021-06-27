@@ -20,7 +20,6 @@ BuildArch: noarch
 BuildRequires: python3-devel
 BuildRequires: %{py3_dist requests}
 BuildRequires: %{py3_dist setuptools}
-BuildRequires: %{py3_dist six}
 BuildRequires: %{py3_dist wheel}
 
 %description %_description
