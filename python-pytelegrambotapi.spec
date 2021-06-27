@@ -1,34 +1,35 @@
 %global appname pytelegrambotapi
 %global richname pyTelegramBotAPI
 
-%global appsum Python Telegram bot API
-%global appdesc A simple, but extensible Python implementation for the Telegram Bot API
+%global _description %{expand:
+A simple, but extensible Python implementation for the Telegram
+Bot API.
+
+It can be used to create powerful bots for the Telegram messenger.}
 
 Name: python-%{appname}
 Version: 3.8.0
 Release: 1%{?dist}
-Summary: %{appsum}
 
 License: GPLv2+
+Summary: Python Telegram Bot API implementation
 URL: https://github.com/eternnoir/%{richname}
 Source0: %{url}/archive/%{version}/%{appname}-%{version}.tar.gz
 BuildArch: noarch
 
 BuildRequires: python3-devel
-BuildRequires: python3-setuptools
-BuildRequires: python3dist(requests)
-BuildRequires: python3dist(wheel)
-BuildRequires: python3dist(six)
+BuildRequires: %{py3_dist requests}
+BuildRequires: %{py3_dist setuptools}
+BuildRequires: %{py3_dist six}
+BuildRequires: %{py3_dist wheel}
 
-%description
-%{appdesc}.
+%description %_description
 
 %package -n python3-%{appname}
 Summary: %{appsum}
 %{?python_provide:%python_provide python3-%{appname}}
 
-%description -n python3-%{appname}
-%{appdesc}.
+%description -n python3-%{appname} %_description
 
 %prep
 %autosetup -n %{richname}-%{version} -p1
