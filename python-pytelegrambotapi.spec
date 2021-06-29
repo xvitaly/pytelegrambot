@@ -8,8 +8,8 @@ Bot API.
 It can be used to create powerful bots for the Telegram messenger.}
 
 Name: python-%{appname}
-Version: 3.8.0
-Release: 2%{?dist}
+Version: 3.8.1
+Release: 1%{?dist}
 
 License: GPLv2+
 Summary: Python Telegram Bot API implementation
@@ -49,6 +49,9 @@ Summary: %{summary}
 %{python3_sitelib}/%{richname}-*.egg-info/
 
 %changelog
+* Tue Jun 29 2021 Vitaly Zaitsev <vitaly@easycoding.org> - 3.8.1-1
+- Updated to version 3.8.1.
+
 * Sun Jun 27 2021 Vitaly Zaitsev <vitaly@easycoding.org> - 3.8.0-2
 - Fixed summary field in Python 3 subpackage.
 
